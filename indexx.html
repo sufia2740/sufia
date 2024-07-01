@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+          background-color: #000000; /* Black background */
+          color: #ffffff; /* White text */
+      }
+
+      .about-section {
+        text-align: center;
+        padding: 20px 0;
+        margin-bottom: 50px;
+        
+      }
+      #about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+
+      }
+      .about-section img {
+        width: 200px; /* Adjust the size as needed */
+  height: 200px;
+  border-radius: 50%; /* Makes the image round */
+  margin-bottom: 20px;
+      }
+      #about p {
+        color: #ffffff;
+        margin-top: 0;
+  margin-bottom: 1.5em; /* Adjust as needed */
+  text-align: justify; /* Justify text for a clean alignment */
+  line-height: 1.6;
+        
+      }
+      
+    
+      /* Additional CSS for Projects Section */
+    #projects h2 {
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    #projects .card:hover {
+  transform: scale(1.05);
+}
+    
+    .card {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.752); /* Adds a subtle shadow around the card */
+          transition: transform 0.2s;
+          border: 0px;;
+
+    }
+    .card-img-top {
+      max-height: 150px; /* Adjust this value to fit the image properly in the card */
+      object-fit: cover; /* This makes sure the image covers the area properly */
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      color:#000000
+
+    }
+    .card-text {
+      margin-bottom: 5px;
+      color: black;
+    }
+    
+    #skills h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#skills .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+#skills .card:hover {
+  transform: scale(1.05);
+}
+
+#skills .card-img-top {
+width: 50%;         /* Ensures the image takes the full width of the card */
+display: block;     /* Ensures the image is treated as a block element */
+  margin: 0 auto;     /* Centers the image horizontally */
+  object-fit: cover;  /* Ensures the image covers the container without stretching */
+  object-position: center;
+  margin-top: 5px;
+}
+
+#skills .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#skills .card-text {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#skills .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+    
+    /* Additional CSS for Contact Section */
+    
+    .contact-section {
+      padding: 50px 0;
+      
+    }
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .contact-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .social-icon {
+      width: 50px; /* Size of your icons */
+      margin-bottom: 10px;
+    }
+    /* Hover effect for icons */
+    .social-icon:hover {
+      opacity: 0.7;
+    }
+    /* Style for links in the Contact section */
+    .contact-section a {
+      color: #ffffff;
+      text-decoration: none; /* Removes underline from links */
+      display: inline-block; /* Allows for margin on the bottom */
+      margin-bottom: 10px;
+    }
+    .contact-section a:hover {
+      color: #dddddd; /* Color when hovering over the link */
+    }
+    
+    /* CSS for Sticky Navbar */
+    .navbar {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+    }
+    
+    /* Ensure padding is added to body to avoid content being hidden behind the navbar */
+    body { 
+      padding-top: 56px; /* Adjust this value based on the height of your navbar */
+    }
+    
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .navbar {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for navbar */
+  position: absolute; /* Position navbar absolutely */
+  width: 100%;
+  z-index: 10; /* Ensure navbar is on top */
+}
+
+.navbar-brand, .nav-link {
+  font-size: 1.2rem;
+  color: #ffffff !important; /* Text color for navbar links */
+}
+
+.nav-link {
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+    
+    
+    </style>
+    
+      
+    
+</head>
+<body>
+    <section id="about" class="container text-center my-5">
+        <h2>About</h2>
+        <div class="row justify-content-center my-4">
+            <div class="col-md-3">
+                <img src="images/about/1.jpg" class="img-fluid rounded-circle" alt="Profile Picture">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+              <p>Hey there! I'm SUFIA, an almost-graduate with a Bachelor's in Computer Science and Engineering, ready to toss my graduation cap next month! 🎓</p>
+
+                <p>While my peers were binge-watching the latest shows, I was binge-learning the fascinating world of data analysis. Armed with skills in SQL, Python, Power BI and Tableau—self-taught and passionately mastered—I've discovered that data isn't just numbers and charts; it's like a puzzle waiting to be solved, and I'm the Sherlock Holmes of spreadsheets.
+
+                </p>
+                
+               <p>My fascination with data started as a mild curiosity and quickly escalated to me stalking data sets like they're gossip magazines.  The ability to uncover hidden patterns, make data-driven decisions, and solve complex problems caught my attention and never let go. Now, I'm on a mission to turn raw data into meaningful insights and contribute to innovative solutions.</p>
+                
+                <p>When I'm not knee-deep in datasets, you'll find me exploring new tech trends, tinkering with personal projects, painting and drawing, graphic designing, or simply enjoying F1.</p>
+                <p>I can't wait to dive into the world of data analysis and bring my unique blend of geekiness and creativity to the table. Let's connect and decode the mysteries of data together!</p>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container text-center my-5">
+        <h2>Projects</h2>
+        <div class="row justify-content-center">
+            <!-- Project 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Netflix Analysis</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <a href="#" class="btn btn-primary"> GitHub </a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Netflix Title</h5>
+                        <p class="card-text">Analyzed Netflix titles in Tableau, highlighting trends in content, genre distribution, and ratings to uncover actionable insights.</p>
+                        <a href="https://public.tableau.com/app/profile/sufia.8262/viz/Netflixtitles_17188724229400/Netflix" class="btn btn-primary">Tableau</a>
+                        <a href="https://medium.com/@sufiaaa07/analyzing-netflix-titles-a-comprehensive-overview-using-tableau-5689ec4d0422" class="btn btn-secondary">Blog Post</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ecommerce Sales</h5>
+                        <p class="card-text">Analyzed Madhav's ecommerce sales data and developed an interactive Power BI dashboard to visualize key trends and product performance.</p>
+                        <a href="https://app.powerbi.com/groups/me/reports/5e1f5901-eae3-4ef9-98ce-6d37347767cb/d0cfbb4ac33967a3516d?experience=power-bi" class="btn btn-primary"> Power BI </a>
+                        <a href="https://medium.com/@sufiaaa07/analyzing-madhav-e-commerce-data-with-power-bi-a-first-time-experience-9a5e51d9b44c" class="btn btn-secondary">Medium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Project 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/projects/4.jpg" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Diwali Sales</h5>
+                        <p class="card-text">Conducted a comprehensive Diwali sales analysis using Python, focusing on sales trends, product category for future campaigns.</p>
+                        <a href="https://github.com/sufia2740/Diwali_sales" class="btn btn-primary"> GitHub </a>
+                        <a href="https://medium.com/@sufiaaa07/analyzing-diwali-sales-using-python-c412c5bd077b" class="btn btn-secondary">Blog Post</a>
+                    </div>
+                </div>
+            </div>
+                <!-- Project 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/projects/5.jpg" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 5</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            <a href="#" class="btn btn-primary"> GitHub </a>
+                            <a href="#" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/projects/6.jpg" class="card-img-top" alt="Project 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 6</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <a href="#" class="btn btn-primary"> GitHub </a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="skills" class="container text-center my-5">
+      <h2>Skills</h2>
+      <div class="row justify-content-center">
+          <!-- Skill 1 -->
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Python</h5>
+                  </div>
+              </div>
+          </div>
+          <!-- Skill 2 -->
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Power BI</h5>
+                  </div>
+              </div>
+          </div>
+          <!-- Skill 3 -->
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">SQL</h5>
+                  </div>
+              </div>
+          </div>
+          <!-- Skill 4 -->
+          <div class="col-md-3 mb-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Tableau</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+        <!-- Skill 1 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Excel</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">R</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Stastistics</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Skill 4 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container text-center">
+          <h2 class="mb-4">Contact Me</h2>
+          <div class="row justify-content-center mb-4">
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <i class="bi bi-envelope-fill me-2"></i>
+                <span>sufiaaa07@gmail.com</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <i class="bi bi-telephone-fill me-2"></i>
+                <span>+91-9666726818</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <a href="https://www.linkedin.com/in/sufia-47bb39228/" target="_blank" class="btn btn-pink btn-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                <img src="icons/linkedin.png" alt="LinkedIn" class="img-fluid">
+              </a>
+            </div>
+           
+            <div class="col-1">
+              <a href="https://github.com/sufia2740" target="_blank" class="btn btn-pink btn-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                <img src="icons/github.png" alt="GitHub" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-1">
+              <a href="https://medium.com/@sufiaaa07" target="_blank" class="btn btn-pink btn-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Medium">
+                <img src="icons/medium.png" alt="Medium" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-1">
+              <a href="https://public.tableau.com/app/profile/sufia.8262" target="_blank" class="btn btn-pink btn-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Tableau">
+                <img src="icons/tableau.png" alt="Tableau" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
