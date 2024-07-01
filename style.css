@@ -1,0 +1,59 @@
+/* General Styles */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+     /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    position: relative; /* Ensure relative positioning for absolute content */
+    margin-bottom: 50px;
+
+}
+
+.navbar {
+    background-color: rgba(18, 17, 17, 0.5); /* Semi-transparent background for navbar */
+    position: absolute; /* Position navbar absolutely */
+    width: 100%;
+    z-index: 10;}
+
+.navbar-brand, .nav-link {
+    font-size: 1.2rem;
+    color: #ffffff !important; /* Text color for navbar links */
+}
+
+.nav-link {
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.hero {
+    padding: 150px 0;
+    position: relative; /* Ensure relative positioning */
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;  /* New color for the hero section */
+    height: 100vh; /* Set hero section height to viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 80%; /* Ensure image does not exceed conainer width */
+    margin-bottom: 20px; /* Space below image */
+    margin-top: 650px;
+
+}
+
+.btn-primary {
+    background-color: #123253;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
