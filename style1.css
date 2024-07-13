@@ -63,11 +63,7 @@ h2.display-4 {
     background-color: #0056b3;
 }
 
-.img-fluid {
-    max-width: 80%;
-    border: 5px solid #007bff;
-    margin-top: 20px; /* Adjust margin as needed */
-}
+
 
 .mt-4 a {
     transition: color 0.3s;
